@@ -12,7 +12,7 @@ map("v", "K", ":m '<-2<CR>gv=gv")
 -- normal mode
 -- window
 map("n", "<leader>sv", "<C-W>v") -- split vertically
-map("n", "<leader>sh", "<C-W>s") -- split horizontally
+-- map("n", "<leader>sh", "<C-W>s") -- split horizontally; temprorily conflict with telescope
 map("n", "<leader>wq", "<C-W>q") -- window quit
 map("n", "<C-H>", "<C-W>h")
 map("n", "<C-J>", "<C-W>j")

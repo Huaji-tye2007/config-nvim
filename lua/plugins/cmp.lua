@@ -23,22 +23,43 @@ local check_backspace = function()
     return col == 0 or vim.fn.getline("."):sub(col, col):match "%s"
 end
 
+local source_mapping = {
+    nvim_lsp = "[LSP]",
+    nvim_lua = "[LUA]",
+    luasnip = "[SNIP]",
+    buffer = "[BUF]",
+    path = "[PATH]",
+    -- treesitter = "[TREE]",
+    ["vim-dadbod-completion"] = "[DB]",
+}
 
 cmp.setup({
     window = {
-        completion = cmp.config.window.bordered(),
-        documentation = cmp.config.window.bordered(),
+        completion = cmp.config.window.bordered({ border = "rounded" }),
+        documentation = cmp.config.window.bordered({ border = "rounded" }),
     },
     formatting = {
         format = lspkind.cmp_format({
-            mode = 'symbol_text',
-            menu = ({
-                buffer = "[Buffer]",
-                nvim_lsp = "[LSP]",
-                luasnip = "[LuaSnip]",
-                nvim_lua = "[Lua]",
-            })
+            mode = "symbol_text",
+            ellipsis_char = "...",
+            before = function(entry, item)
+                return item
+            end,
+            menu = source_mapping,
         }),
+    },
+    sorting = {
+        priority_weight = 2,
+        comparators = {
+            cmp.config.compare.offset,
+            cmp.config.compare.exact,
+            cmp.config.compare.score,
+            cmp.config.compare.recently_used,
+            cmp.config.compare.kind,
+            cmp.config.compare.sort_text,
+            cmp.config.compare.length,
+            cmp.config.compare.order,
+        },
     },
     snippet = {
         expand = function(args)
@@ -83,10 +104,42 @@ cmp.setup({
     }),
 
     sources = cmp.config.sources({
-        { name = 'nvim_lsp' },
-        { name = 'luasnip' },
-        { name = 'path' },
-    }, {
-        { name = 'buffer' },
+        {
+            name = "luasnip",
+            group_index = 1,
+            option = { use_show_condition = true },
+            entry_filter = function()
+                local context = require("cmp.config.context")
+                return not context.in_treesitter_capture("string")
+                    and not context.in_syntax_group("String")
+            end,
+        },
+        {
+            name = "nvim_lsp",
+            group_index = 2,
+        },
+        {
+            name = "nvim_lua",
+            group_index = 3,
+        },
+        {
+            name = "path",
+            keyword_length = 4,
+            group_index = 4,
+        },
+        {
+            name = "buffer",
+            keyword_length = 3,
+            group_index = 5,
+            option = {
+                get_bufnrs = function()
+                    local bufs = {}
+                    for _, win in ipairs(vim.api.nvim_list_wins()) do
+                        bufs[vim.api.nvim_win_get_buf(win)] = true
+                    end
+                    return vim.tbl_keys(bufs)
+                end,
+            },
+        },
     })
 })
