@@ -85,6 +85,10 @@
       "rev": "0ca28b61a04fe7426cefbdd52c2647ef0e335b5f",
       "src": "https://github.com/nvim-tree/nvim-web-devicons"
     },
+    "pdfreader.nvim": {
+      "rev": "f8c067648b0c0d332a8d241111787a6b4d7ba061",
+      "src": "https://github.com/r-pletnev/pdfreader.nvim"
+    },
     "plenary.nvim": {
       "rev": "74b06c6c75e4eeb3108ec01852001636d85a932b",
       "src": "https://github.com/nvim-lua/plenary.nvim"
