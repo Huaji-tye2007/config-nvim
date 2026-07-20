@@ -22,7 +22,7 @@ gitsigns.setup({
 
 -- Using gitsigns's data since lualine's builtin component is updated less
 -- frequently and thus often out of sync with gitsigns in the signcolumn.
-vim.g.lualineAdd("sections", "lualine_y", {
+vim.g.lualineAdd("sections", "lualine_b", {
     "diff",
     source = function()
         local gs = vim.b.gitsigns_status_dict
