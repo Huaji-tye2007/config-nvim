@@ -44,10 +44,13 @@ vim.pack.add({
     -- Formatter
     { src = "https://github.com/stevearc/conform.nvim" },
 
-    -- Telescope
+    -- Telescope & multi-media
     { src = "https://github.com/nvim-lua/plenary.nvim" },
+    { src = "https://github.com/nvim-lua/popup.nvim" },
     { src = "https://github.com/nvim-telescope/telescope-live-grep-args.nvim" },
     { src = "https://github.com/nvim-telescope/telescope.nvim" },
+    { src = "https://github.com/nvim-telescope/telescope-media-files.nvim" },
+    -- {src="https://github.com/r-pletnev/pdfreader.nvim"},
 
     -- git
     { src = "https://github.com/lewis6991/gitsigns.nvim" },

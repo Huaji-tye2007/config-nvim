@@ -12,6 +12,7 @@ vim.api.nvim_create_autocmd('InsertLeave', {
 
 -- insert mode
 map("i", "jk", "<ESC>")
+map("i", "<C-C>", "<ESC>")
 
 -- visual mode
 map("v", "J", ":m '>+1<CR>gv=gv")
