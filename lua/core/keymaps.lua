@@ -2,6 +2,14 @@ vim.g.mapleader = " "
 
 local map = vim.keymap.set
 
+-- shorten the leader key timeoutlen only in insert mode
+vim.api.nvim_create_autocmd('InsertEnter', {
+    callback = function() vim.o.timeoutlen = 150 end
+})
+vim.api.nvim_create_autocmd('InsertLeave', {
+    callback = function() vim.o.timeoutlen = 1000 end
+})
+
 -- insert mode
 map("i", "jk", "<ESC>")
 
@@ -29,6 +37,9 @@ map("n", "<leader>te", ":tabedit")
 map("n", "<leader>tc", ":tabclose<CR>")
 map("n", "<C-]>", "gt") -- move to next tab
 map("n", "<C-[>", "gT") -- move to next tab
+-- line
+map("n", "<leader>l", "$")
+map("n", "<leader>h", "^")
 
 -- cancel highlight
 map("n", "<leader>nh", ":nohl<CR>")
