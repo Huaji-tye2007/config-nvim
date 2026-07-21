@@ -69,7 +69,7 @@
       "src": "https://codeberg.org/Jorenar/nvim-dap-disasm.git"
     },
     "nvim-dap-view": {
-      "rev": "b8c8aa91f42055d7f69012587cde4f1d99f2a701",
+      "rev": "ba5c838e731003abefb8bc1c403c59aa5b3aa194",
       "src": "https://github.com/igorlfs/nvim-dap-view",
       "version": "1.0.0 - 2.0.0"
     },
@@ -85,25 +85,17 @@
       "rev": "0ca28b61a04fe7426cefbdd52c2647ef0e335b5f",
       "src": "https://github.com/nvim-tree/nvim-web-devicons"
     },
-    "pdfreader.nvim": {
-      "rev": "f8c067648b0c0d332a8d241111787a6b4d7ba061",
-      "src": "https://github.com/r-pletnev/pdfreader.nvim"
-    },
     "plenary.nvim": {
       "rev": "74b06c6c75e4eeb3108ec01852001636d85a932b",
       "src": "https://github.com/nvim-lua/plenary.nvim"
     },
-    "popup.nvim": {
-      "rev": "b7404d35d5d3548a82149238289fa71f7f6de4ac",
-      "src": "https://github.com/nvim-lua/popup.nvim"
+    "snacks.nvim": {
+      "rev": "882c996cf28183f4d63640de0b4c02ec886d01f2",
+      "src": "https://github.com/folke/snacks.nvim"
     },
     "telescope-live-grep-args.nvim": {
       "rev": "53e9df55b3651dd7cf77e172f1e8c9a17407acca",
       "src": "https://github.com/nvim-telescope/telescope-live-grep-args.nvim"
-    },
-    "telescope-media-files.nvim": {
-      "rev": "0826c7a730bc4d36068f7c85cf4c5b3fd9fb570a",
-      "src": "https://github.com/nvim-telescope/telescope-media-files.nvim"
     },
     "telescope.nvim": {
       "rev": "427b576c16792edad01a92b89721d923c19ad60f",

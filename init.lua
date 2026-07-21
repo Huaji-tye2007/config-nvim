@@ -1,5 +1,5 @@
 -- ui2
-require("vim._core.ui2").enable({})
+-- require("vim._core.ui2").enable({})
 
 require("core.options")
 require("core.keymaps")
@@ -22,6 +22,7 @@ require("plugins.gitsigns")
 require("plugins.dap")
 require("plugins.dap-disam")
 require("plugins.dap-view")
+require("plugins.snacks")
 
 -- Load lsp set-up
 require("plugins.lsp.lsp_conf")

@@ -5,18 +5,18 @@ local lga_actions = require("telescope-live-grep-args.actions")
 
 telescope.setup({
     defaults = {
+        theme = 'dropdown',
         mappings = {
             i = {
+                ["<C-s>"] = lga_actions.quote_prompt({ postfix = ' -t' }),
             },
         },
     },
     extentions = {
-        auto_quoting = false,
-        mappings = {
-            i = {
-            },
+        live_grep_args = {
+            auto_quoting = true,
         },
-    }
+    },
 })
 
 telescope.load_extension("live_grep_args")
