@@ -62,3 +62,7 @@ map({ "n", "v", "i" }, "<leader>tt", ":NvimTreeToggle<CR>", { noremap = true, si
 
 -- buffer
 map("n", "<leader>bd", ":bdelete<CR>", { desc = "Close Current Buffer", silent = true })
+
+vim.keymap.set('n', '<leader>mf', function()
+    require('plugins.new_media_preview').media_files()
+end, { desc = "Search Media Files (Custom)" })

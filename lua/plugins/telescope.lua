@@ -12,11 +12,11 @@ telescope.setup({
             },
         },
     },
-    extentions = {
+    extensions = {
         live_grep_args = {
             auto_quoting = true,
         },
-    },
+    }
 })
 
 telescope.load_extension("live_grep_args")

@@ -28,6 +28,12 @@ vim.pack.add({
     -- Inline diagnostic
     { src = "https://github.com/rachartier/tiny-inline-diagnostic.nvim" },
 
+    -- New TreeSitter
+    {
+        src = "https://github.com/nvim-treesitter/nvim-treesitter",
+        version = "main"
+    },
+
     -- Completion
     { src = "https://github.com/hrsh7th/nvim-cmp" },
     { src = "https://github.com/hrsh7th/cmp-nvim-lsp" },
@@ -47,6 +53,7 @@ vim.pack.add({
     -- Telescope & multi-media
     { src = "https://github.com/nvim-lua/plenary.nvim" },
     { src = "https://github.com/nvim-telescope/telescope-live-grep-args.nvim" },
+    { src = "https://github.com/3rd/image.nvim" },
     { src = "https://github.com/nvim-telescope/telescope.nvim" },
     { src = "https://github.com/folke/snacks.nvim" },
 

@@ -29,5 +29,7 @@ vim.lsp.enable({
     "lua_ls",
     "pyright",
     -- "ast_grep",
+    "marksman",     -- markdown
+    "slang-server", -- verilog
     "clangd",
 })
