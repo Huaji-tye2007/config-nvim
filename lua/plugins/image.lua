@@ -6,16 +6,16 @@ if not ok then
 end
 
 image.setup({
-    debug        = {
+    debug                        = {
         file_path = "/tmp/image.nvim.log",
         format = "compact",
         enabled = true,
         level = "debug",
     },
-    backend      = "kitty",
-    processor    = "magick_cli",
-    kitty_method = "normal",
-    integrations = {
+    backend                      = "kitty",
+    processor                    = "magick_cli",
+    kitty_method                 = "normal",
+    integrations                 = {
         telescope = {
             enabled = false,
         },
@@ -28,7 +28,8 @@ image.setup({
             floating_windows = false,
             filetypes = { "markdown", "vimwiki" },
         },
-    }
+    },
+    max_height_window_percentage = 80,
 })
 
 image.enable()

@@ -41,27 +41,17 @@ function M.media_files(opts)
     local tmp_dir = "/tmp/vimg"
     vim.fn.mkdir(tmp_dir, "p")
 
-    -- 绘制函数
-    -- local function draw_image(filepath, bufnr, winid)
-    --     if not vim.api.nvim_buf_is_valid(bufnr) or not vim.api.nvim_win_is_valid(winid) then return end
-    --     M.current_image = image_api.from_file(filepath, {
-    --         window = winid,
-    --         buffer = bufnr,
-    --         with_virtual_padding = true,
-    --     })
-    --     if M.current_image then
-    --         M.current_image:render()
-    --     end
-    -- end
     local function draw_image(filepath, bufnr, winid)
-        -- 延迟 50 毫秒，等 Telescope 的浮动窗口完全排版完毕
         vim.defer_fn(function()
             if not vim.api.nvim_buf_is_valid(bufnr) or not vim.api.nvim_win_is_valid(winid) then return end
-
+            local win_width = vim.api.nvim_win_get_width(winid)
+            local win_height = vim.api.nvim_win_get_height(winid)
             M.current_image = image_api.from_file(filepath, {
                 window = winid,
                 buffer = bufnr,
                 with_virtual_padding = true,
+                width = win_width,
+                height = win_height,
             })
 
             if M.current_image then

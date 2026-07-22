@@ -30,6 +30,7 @@ vim.lsp.enable({
     "pyright",
     -- "ast_grep",
     "marksman",     -- markdown
+    "tailwindcss",  -- css html and markdown
     "slang-server", -- verilog
     "clangd",
 })
