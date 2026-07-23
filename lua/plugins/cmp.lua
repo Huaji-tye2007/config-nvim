@@ -117,6 +117,11 @@ cmp.setup({
         {
             name = "nvim_lsp",
             group_index = 2,
+            option = {
+                markdown = {
+                    keyword_pattern = [[\S\+]],
+                },
+            },
         },
         {
             name = "nvim_lua",
