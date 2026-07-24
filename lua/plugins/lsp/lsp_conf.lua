@@ -33,3 +33,10 @@ vim.lsp.enable({
     "slang-server", -- verilog
     "clangd",
 })
+
+vim.filetype.add({
+    extension = {
+        v  = 'verilog',
+        vh = 'verilog',
+    }
+})

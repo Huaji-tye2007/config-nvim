@@ -28,7 +28,7 @@ vim.pack.add({
     -- Inline diagnostic
     { src = "https://github.com/rachartier/tiny-inline-diagnostic.nvim" },
 
-    -- New TreeSitter
+    -- New TreeSitter for Neovim 0.12+
     {
         src = "https://github.com/nvim-treesitter/nvim-treesitter",
         version = "main"
@@ -45,8 +45,7 @@ vim.pack.add({
     { src = "https://github.com/hrsh7th/cmp-nvim-lua" },
     { src = "https://github.com/onsails/lspkind.nvim" },
 
-    -- Comment & auto-pairs
-    { src = "https://github.com/numToStr/Comment.nvim" },
+    -- Auto-pairs
     { src = "https://github.com/windwp/nvim-autopairs" },
 
     -- Formatter
