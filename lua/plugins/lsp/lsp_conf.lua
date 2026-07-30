@@ -17,6 +17,7 @@ require("mason-lspconfig").setup()
 -- load every lsp config lua files
 require("plugins.lsp.lua")
 require("plugins.lsp.markdown")
+require("plugins.lsp.slang")
 
 -- all server completion support
 local cmp_nvim_lsp = require("cmp_nvim_lsp")

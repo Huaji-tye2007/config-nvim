@@ -9,7 +9,9 @@ vim.pack.add({
     { src = "https://github.com/nvim-lualine/lualine.nvim" },
 
     -- File browser
-    { src = "https://github.com/nvim-tree/nvim-tree.lua" },
+    -- { src = "https://github.com/nvim-tree/nvim-tree.lua" },
+    { src = "https://github.com/MunifTanjim/nui.nvim" },
+    { src = "https://github.com/nvim-neo-tree/neo-tree.nvim" },
 
     -- LSP
     { src = "https://github.com/mason-org/mason.nvim" },

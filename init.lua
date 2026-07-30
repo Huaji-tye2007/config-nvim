@@ -1,6 +1,3 @@
--- env
-vim.env.KITTY_LISTEN_ON = "unix:/tmp/kitty"
-
 -- ui2
 require("vim._core.ui2").enable({})
 
@@ -17,7 +14,8 @@ require("plugins.lsp.lsp_conf")
 require("plugins.tokyonight")
 require("plugins.nvimwebdevicons")
 require("plugins.lualine")
-require("plugins.nvim-tree")
+-- require("plugins.nvim-tree")
+require("plugins.neotree")
 require("plugins.new_treesitter")
 require("plugins.tinyinline")
 require("plugins.cmp")

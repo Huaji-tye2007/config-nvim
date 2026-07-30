@@ -58,7 +58,11 @@ map({ "n", "v" }, "<leader>fm", function()
 end, { desc = "Format the current file or selected area." })
 
 -- NvimTree Toggle
-map({ "n", "v", "i" }, "<leader>tt", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
+-- map({ "n", "v", "i" }, "<leader>tt", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
+
+-- Neotree Toggle
+map({ "n", "v", "i" }, "<leader>nt", ":Neotree toggle=true<CR>")
+map({ "n", "v", "i" }, "<leader>gs", ":Neotree source=document_symbols position=right toggle=true<CR>")
 
 -- buffer
 map("n", "<leader>bd", ":bdelete<CR>", { desc = "Close Current Buffer", silent = true })
