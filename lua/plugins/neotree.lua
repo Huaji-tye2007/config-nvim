@@ -31,5 +31,8 @@ neotree.setup({
     clipboard = {
         sync = "global",
     },
-    close_if_last_window = true,
+    close_if_last_window = false,
+    window = {
+        width = 35,
+    },
 })

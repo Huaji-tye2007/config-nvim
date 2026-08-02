@@ -29,7 +29,7 @@ lualine.setup({
                 mode = 2,
                 icons_enabled = true,
                 symbols = {
-                    modified = ' ●',
+                    modified = '●',
                     alternate_file = '',
                     directory = '',
                 },

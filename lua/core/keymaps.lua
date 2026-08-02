@@ -62,7 +62,7 @@ end, { desc = "Format the current file or selected area." })
 
 -- Neotree Toggle
 map({ "n", "v", "i" }, "<leader>nt", ":Neotree toggle=true<CR>")
-map({ "n", "v", "i" }, "<leader>gs", ":Neotree source=document_symbols position=right toggle=true<CR>")
+map({ "n", "v", "i" }, "<leader>gs", ":Neotree toggle=true<CR>")
 
 -- buffer
 map("n", "<leader>bd", ":bdelete<CR>", { desc = "Close Current Buffer", silent = true })
