@@ -18,6 +18,7 @@ require("mason-lspconfig").setup()
 require("plugins.lsp.lua")
 require("plugins.lsp.markdown")
 require("plugins.lsp.slang")
+require("plugins.lsp.verible")
 
 -- all server completion support
 local cmp_nvim_lsp = require("cmp_nvim_lsp")
@@ -32,6 +33,7 @@ vim.lsp.enable({
     "marksman",     -- markdown
     "tailwindcss",  -- css html and markdown
     "slang-server", -- verilog
+    "verible",      -- verilog
     "clangd",
 })
 
