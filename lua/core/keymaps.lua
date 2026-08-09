@@ -67,6 +67,10 @@ map({ "n", "v", "i" }, "<leader>gs", ":Neotree document_symbols position=right t
 -- buffer
 map("n", "<leader>bd", ":bdelete<CR>", { desc = "Close Current Buffer", silent = true })
 
-vim.keymap.set('n', '<leader>mf', function()
+-- multimedia files search
+map('n', '<leader>mf', function()
     require('plugins.new_media_preview').media_files()
 end, { desc = "Search Media Files (Custom)" })
+
+-- Copilot completion accept button
+map("i", "<C-J>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
