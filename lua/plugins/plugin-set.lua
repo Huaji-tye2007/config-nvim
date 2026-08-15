@@ -25,6 +25,8 @@ vim.pack.add({
         src = "https://github.com/igorlfs/nvim-dap-view",
         version = vim.version.range("1.*")
     },
+    { src = "https://github.com/akinsho/toggleterm.nvim" },
+    { src = "https://github.com/ryanmsnyder/toggleterm-manager.nvim" },
     -- { src ="https://github.com/rcarriga/nvim-dap-ui"},
 
     -- Inline diagnostic

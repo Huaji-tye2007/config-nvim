@@ -28,7 +28,7 @@ vim.filetype.add({
 -- load every lsp config lua files
 require("plugins.lsp.lua")
 require("plugins.lsp.markdown")
-require("plugins.lsp.slang")
+-- require("plugins.lsp.slang")
 -- require("plugins.lsp.verible")
 require("plugins.lsp.vide")
 

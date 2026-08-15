@@ -1,5 +1,4 @@
 vim.g.mapleader = " "
-
 local map = vim.keymap.set
 
 -- shorten the leader key timeoutlen only in insert mode

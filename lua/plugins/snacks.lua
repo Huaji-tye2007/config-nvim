@@ -5,4 +5,4 @@ if not ok then
     return
 end
 
-snacks.setup()
+snacks.setup({})
