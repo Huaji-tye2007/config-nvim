@@ -30,3 +30,9 @@ opt.smartcase = true
 -- appearance
 opt.termguicolors = true
 opt.signcolumn = "yes"
+
+-- line length
+opt.wrap = true
+opt.linebreak = true
+opt.breakindent = true
+opt.colorcolumn = "120"

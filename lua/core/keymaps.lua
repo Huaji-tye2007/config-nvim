@@ -72,4 +72,4 @@ map('n', '<leader>mf', function()
 end, { desc = "Search Media Files (Custom)" })
 
 -- Copilot completion accept button
-map("i", "<C-J>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
+-- map("i", "<C-J>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
