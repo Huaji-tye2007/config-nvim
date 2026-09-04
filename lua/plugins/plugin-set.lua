@@ -28,6 +28,7 @@ vim.pack.add({
     { src = "https://github.com/akinsho/toggleterm.nvim" },
     { src = "https://github.com/ryanmsnyder/toggleterm-manager.nvim" },
     -- { src ="https://github.com/rcarriga/nvim-dap-ui"},
+    { src = "https://github.com/theHamsta/nvim-dap-virtual-text" },
 
     -- Inline diagnostic
     { src = "https://github.com/rachartier/tiny-inline-diagnostic.nvim" },
@@ -68,4 +69,9 @@ vim.pack.add({
 
     -- copilot
     { src = "https://github.com/github/copilot.vim" },
+
+    -- Code Folder
+    { src = "https://github.com/kevinhwang91/nvim-ufo" },
+    { src = "https://github.com/kevinhwang91/promise-async" },
+
 })

@@ -30,6 +30,7 @@ opt.smartcase = true
 -- appearance
 opt.termguicolors = true
 opt.signcolumn = "yes"
+opt.fillchars = { foldopen = "▼", foldclose = "▶", foldsep = "│" }
 
 -- line length
 opt.wrap = true

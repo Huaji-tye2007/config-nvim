@@ -1,4 +1,5 @@
 -- ~/.config/nvim/lua/plugins/lsp/vide.lua
+
 vim.lsp.config('vide', {
     cmd = { 'vide' },
     filetypes = { 'verilog', 'systemverilog' },
