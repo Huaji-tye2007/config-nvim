@@ -36,4 +36,4 @@ opt.fillchars = { foldopen = "▼", foldclose = "▶", foldsep = "│" }
 opt.wrap = true
 opt.linebreak = true
 opt.breakindent = true
-opt.colorcolumn = "120"
+opt.colorcolumn = "140"

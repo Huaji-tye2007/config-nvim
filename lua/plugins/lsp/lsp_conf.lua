@@ -31,6 +31,7 @@ require("plugins.lsp.markdown")
 -- require("plugins.lsp.slang")
 -- require("plugins.lsp.verible")
 require("plugins.lsp.vide")
+require("plugins.lsp.asm-lsp")
 
 -- all server completion support
 local cmp_nvim_lsp = require("cmp_nvim_lsp")
@@ -53,6 +54,7 @@ vim.lsp.enable({
     -- "verible",      -- verilog
     "vide", -- verilog
     "clangd",
+    "asm-lsp",
 })
 
 -- inlay hints

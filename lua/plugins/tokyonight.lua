@@ -26,21 +26,21 @@ tokyonight.setup({
         hl.LineNrAbove = { fg = "#ff9e64" }
         hl.LineNrBelow = { fg = "#ff9e64" }
         local transparent_groups = {
-            "NeoTreeNormal",
-            "NeoTreeNormalNC",
-            "NeoTreeFloatNormal",
-            "NeoTreeFloatBorder",
-            "NeoTreePopupNormal",
-            "NeoTreePopupBorder",
-            "NuiComponentsPopupHint",
-            "NuiComponentsPopupBorder",
-            "NormalFloat",
-            "FloatBorder",
-            "TelescopeNormal",
-            "TelescopeBorder",
-            "TelescopePromptNormal",
-            "TelescopeResultsNormal",
-            "TelescopePreviewNormal"
+            -- "NeoTreeNormal",
+            -- "NeoTreeNormalNC",
+            -- "NeoTreeFloatNormal",
+            -- "NeoTreeFloatBorder",
+            -- "NeoTreePopupNormal",
+            -- "NeoTreePopupBorder",
+            -- "NuiComponentsPopupHint",
+            -- "NuiComponentsPopupBorder",
+            -- "NormalFloat",
+            -- "FloatBorder",
+            -- "TelescopeNormal",
+            -- "TelescopeBorder",
+            -- "TelescopePromptNormal",
+            -- "TelescopeResultsNormal",
+            -- "TelescopePreviewNormal"
         }
 
         for _, group in ipairs(transparent_groups) do

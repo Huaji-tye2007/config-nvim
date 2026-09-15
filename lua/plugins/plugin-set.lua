@@ -74,4 +74,6 @@ vim.pack.add({
     { src = "https://github.com/kevinhwang91/nvim-ufo" },
     { src = "https://github.com/kevinhwang91/promise-async" },
 
+    -- Markdown Preview
+    { src = "https://github.com/OXY2DEV/markview.nvim" },
 })
