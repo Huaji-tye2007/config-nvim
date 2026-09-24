@@ -75,5 +75,13 @@ vim.pack.add({
     { src = "https://github.com/kevinhwang91/promise-async" },
 
     -- Markdown Preview
-    { src = "https://github.com/OXY2DEV/markview.nvim" },
+    -- Replaced by render-markdown.nvim; kept here (unadded) for reference.
+    -- { src = "https://github.com/OXY2DEV/markview.nvim" },
+    { src = "https://github.com/MeanderingProgrammer/render-markdown.nvim" },
+
+    -- Math formula rendering
+    { src = "https://github.com/jbyuki/nabla.nvim" },
+
+    -- LaTeX compile & preview
+    { src = "https://github.com/lervag/vimtex" },
 })

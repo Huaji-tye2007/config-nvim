@@ -7,6 +7,6 @@ end
 
 treesitter.setup({
     ensure_installed = {
-        'c', 'cpp', 'lua', 'python', 'markdown', 'query' },
+        'c', 'cpp', 'lua', 'python', 'markdown', 'markdown_inline', 'latex', 'query' },
     install_dir = vim.fn.stdpath('data') .. '/site',
 })

@@ -68,6 +68,10 @@
       "rev": "2a6940af80375532e5e9e7c1f2fc6319a1b7a69d",
       "src": "https://github.com/mason-org/mason.nvim"
     },
+    "nabla.nvim": {
+      "rev": "9b69b709063ccf40ac36fabb4fff7d90b3736475",
+      "src": "https://github.com/jbyuki/nabla.nvim"
+    },
     "neo-tree.nvim": {
       "rev": "86e95be4ad1ae5e6f90c809399c9704446e7e86c",
       "src": "https://github.com/nvim-neo-tree/neo-tree.nvim"
@@ -134,6 +138,10 @@
       "rev": "119e8961014c9bfaf1487bf3c2a393d254f337e2",
       "src": "https://github.com/kevinhwang91/promise-async"
     },
+    "render-markdown.nvim": {
+      "rev": "640a3ec6d538bad17c328be373c7cad0293d9589",
+      "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
+    },
     "snacks.nvim": {
       "rev": "882c996cf28183f4d63640de0b4c02ec886d01f2",
       "src": "https://github.com/folke/snacks.nvim"
@@ -161,6 +169,10 @@
     "tokyonight.nvim": {
       "rev": "cdc07ac78467a233fd62c493de29a17e0cf2b2b6",
       "src": "https://github.com/folke/tokyonight.nvim"
+    },
+    "vimtex": {
+      "rev": "42dcf1699e45725bd3b366ecab2ae06f6e0f8118",
+      "src": "https://github.com/lervag/vimtex"
     }
   }
 }

@@ -6,6 +6,10 @@ if not status then
 end
 
 dapview.setup({
+    auto_toggle = true, -- open on session start, close when it ends (like VSCode's debug panel)
+    windows = {
+        position = 'right', -- vertical split on the right, like VSCode's debug sidebar
+    },
     winbar = {
         controls = {
             enabled = true,

@@ -32,6 +32,7 @@ require("plugins.lsp.markdown")
 -- require("plugins.lsp.verible")
 require("plugins.lsp.vide")
 require("plugins.lsp.asm-lsp")
+require("plugins.lsp.latex")
 
 -- all server completion support
 local cmp_nvim_lsp = require("cmp_nvim_lsp")
@@ -50,12 +51,18 @@ vim.lsp.enable({
     "ast_grep",
     "marksman",    -- markdown
     "tailwindcss", -- css html and markdown
+    "texlab",      -- latex
     -- "slang-server", -- verilog
     -- "verible",      -- verilog
     "vide", -- verilog
     "clangd",
     "asm-lsp",
 })
+
+-- go to definition (unmapped by Neovim's own defaults; see :help grr/grn/gra/gri/grt)
+vim.keymap.set("n", "gd", function()
+    vim.lsp.buf.definition()
+end, { desc = "vim.lsp.buf.definition()" })
 
 -- inlay hints
 vim.api.nvim_create_autocmd("LspAttach", {
